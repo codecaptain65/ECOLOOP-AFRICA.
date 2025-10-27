@@ -1,0 +1,82 @@
+/* === ADD-ON STYLES FOR ECOLOOP AFRICA === */
+
+/* General polish */
+body {
+  background: linear-gradient(180deg, #f5f9f6 0%, #eaf5ee 100%);
+  font-family: 'Poppins', sans-serif;
+  color: #222;
+  transition: all 0.3s ease;
+}
+
+/* Subtle animation for sections */
+section {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* "Email Us" Section Enhancement */
+.contact-section {
+  background: #ffffffcc;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  border-radius: 20px;
+  padding: 40px;
+  width: 80%;
+  margin: 50px auto;
+  transition: all 0.4s ease-in-out;
+}
+
+.contact-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* Inputs and buttons */
+input, textarea {
+  border: 2px solid #bde0c9;
+  border-radius: 10px;
+  padding: 12px;
+  width: 100%;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  border-color: #00a86b;
+  box-shadow: 0 0 10px rgba(0,168,107,0.3);
+  outline: none;
+}
+
+button {
+  background: linear-gradient(90deg, #00a86b, #66bb6a);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 24px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background: linear-gradient(90deg, #007f56, #4caf50);
+  transform: scale(1.05);
+}
+
+/* Form header */
+.contact-section h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #006b3c;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
